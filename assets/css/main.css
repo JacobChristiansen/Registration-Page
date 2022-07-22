@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+    background-color:#94a3b8;
+}
+
+.bg_img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    z-index:-9001;
+}
