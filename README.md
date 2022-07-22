@@ -8,4 +8,4 @@
 - Ready for PHP Port.
 
 ## GIF
-![Gif video of webpage](https://i.postimg.cc/vHSBPpgh/registration-page.gif)
+![Gif video of webpage](https://github.com/JacobChristiansen/Registration-Page/blob/main/assets/img/src/registration%20page.gif?raw=true)
