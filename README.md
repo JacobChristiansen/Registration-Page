@@ -1,5 +1,5 @@
 # Registration Page
-![Picture](https://i.imgur.com/I1L6HnQ.png)
+![Picture](https://i.imgur.com/6IdHbPn.png)
 ## Features
 - Modern Responsive Design. (Works neatly with phones)
 - Made with Tailwind.
