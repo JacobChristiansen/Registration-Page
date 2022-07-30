@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,5 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    if(is_resource(@fsockopen(env('AZ_SERVER_IP'),env('AZ_SERVER_PORT'), $errno, $errstr, 3)))
-    {
-        $status = true;
-        fclose(@fsockopen(env('AZ_SERVER_IP'),env('AZ_SERVER_PORT')));
-    }
-    else
-        $status = false;
-    $uptime = DB::table('uptime')->orderby('starttime', 'desc')->first();
-    return view('home', ['uptime' => $uptime, 'status' => $status]);
-});
+Route::get('/', [HomeController::class, 'main']);
 Route::post('/register', [RegisterController::class, 'main']);
