@@ -14,9 +14,21 @@
 </head>
 <body>
     <img src="./assets/img/bg.webp" class="bg_img">
-    <div class="grid h-screen place-items-center">
+    <div class="grid h-screen place-items-center ">
     <div class="flex justify-center">
-        <div class="rounded-lg shadow-lg bg-white max-w-sm dark:bg-slate-800" style="width:24rem;">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm dark:bg-slate-800 card" style="width:24rem;">
+            
+            <div class="rounded-lg bg-white max-w-sm dark:bg-slate-800 announcement">
+                <i class="fa-solid fa-xmark" id="closeframe"></i>
+                <h5 class="text-gray-900 text-xl font-medium mb-2 dark:text-white">Announcement Title!</h5>
+                <p class="text-gray-800 dark:text-white">
+                    <img src="./assets/img/bg2.webp">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl mauris, hendrerit eget nisi vitae, rhoncus vulputate mi. Vestibulum ut euismod lorem, ut accumsan velit. Ut ultricies massa ultrices tellus tempor, sed bibendum leo semper. Suspendisse ultricies felis in iaculis lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus ac metus lectus. Morbi vitae dolor vulputate ex vestibulum fermentum at a mi.
+                </p>
+                <p class="text-gray-700 dark:text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisl mauris, hendrerit eget nisi vitae, rhoncus vulputate mi.
+                </p>
+            </div>
           <div class="p-6">
             <h5 class="text-gray-900 text-xl font-medium mb-2 dark:text-white">Register an Account.</h5>
             <form>
@@ -65,9 +77,10 @@
                     <!-- Total Accounts or Characters registered -->
                     <div><i class="fa-solid fa-users text-orange-400"></i> 42069</div>
                 </div>
-            <code class="text-gray-700 text-base mb-4 dark:text-slate-400 bg-gray-100 dark:bg-gray-800">
+            <code class="text-gray-700 text-base mb-4 dark:text-slate-400 bg-gray-100 dark:bg-gray-800 block">
               SET REALMLIST logon.ac-web.org
             </code>
+            <a href="https://discord.com/" tar="_blank" class="discord p-1.5 pt-1 pb-1 text-white rounded-md"><i class="fa-brands fa-discord"></i> Discord</a>
             </div>
           </div>
         </div>
@@ -76,6 +89,9 @@
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
 <script>
     $( document ).ready(function() {
+        $( "#closeframe" ).click(function() {
+            $(".announcement").hide();
+        });
         // timer
         function engageTimer()
         {
