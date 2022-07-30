@@ -1,5 +1,6 @@
 # Registration Page
 ![Picture](https://i.imgur.com/6IdHbPn.png)
+![Picture](https://github.com/JacobChristiansen/Registration-Page/blob/main/assets/img/src/announcement.png?raw=true)
 ## Features
 - Modern Responsive Design. (Works neatly with phones)
 - Made with Tailwind.
